@@ -3,7 +3,7 @@ const mongoose=require("mongoose")
 const cookieParser=require("cookie-parser")
 const cors=require("cors")
 
-mongoose.connect('mongodb+srv://suryarithwik2005:Rishika11@cluster0.phjlr6l.mongodb.net/'
+mongoose.connect(process.env.MONGO_URL
 ).then(()=>console.log("connected to mongodb")).catch((err)=>console.log(err))
 
 const app=express()
